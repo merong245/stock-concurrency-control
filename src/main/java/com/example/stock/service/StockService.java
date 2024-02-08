@@ -14,6 +14,7 @@ public class StockService {
         this.stockRepository = stockRepository;
     }
 
+    @Transactional
     public synchronized void decrease(Long id, Long quantity){
         // 재고 조회
         // 재고 감소
